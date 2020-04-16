@@ -16,5 +16,11 @@ steps:
     version: '4.3'
     cmd: 'oc login -u kubeadmin -p NotForPublicConsumption https://onepoc.net:6443 --insecure-skip-tls-verify=true'
     uselocalOc: true
+- task: oc-cmd@2
+  inputs:
+    openshiftService: 'ConnOpenShiftHome'
+    version: '4.3'
+    cmd: 'oc status'
+    uselocalOc: true
 
 
