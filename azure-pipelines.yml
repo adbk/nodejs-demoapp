@@ -22,6 +22,7 @@ steps:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
     cmd: 'oc login -u kubeadmin -p kKdPx-pjmWe-b3kuu-jeZm3 https://onepoc.net:6443 --insecure-skip-tls-verify=true'
+    ignoreFlag: true
     uselocalOc: true
 - task: oc-cmd@2
   inputs:
