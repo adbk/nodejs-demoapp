@@ -14,11 +14,11 @@ steps:
   inputs:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
-    cmd: 'oc start-build nodejsapp-nodejsapp --follow --insecure-skip-tls-verify'
+    cmd: 'oc start-build nodejsapp-nodejsapp --follow --insecure-skip-tls-verify=true -u kubeadmin-p kKdPx-pjmWe-b3kuu-jeZm3--loglevel=8'
 - task: oc-cmd@2
   inputs:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
-    cmd: 'oc status --insecure-skip-tls-verify'
+    cmd: 'oc status --insecure-skip-tls-verify=true -u kubeadmin-p kKdPx-pjmWe-b3kuu-jeZm3--loglevel=8'
 
 
