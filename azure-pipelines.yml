@@ -17,3 +17,4 @@ steps:
     cmd: 'oc login -u kubeadmin -p NotForPublicConsumption https://onepoc.net:6443 --insecure-skip-tls-verify=true'
     uselocalOc: true
 
+
