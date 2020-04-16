@@ -1,4 +1,11 @@
 # Node.js
+- task: oc-cmd@2
+  inputs:
+    openshiftService: 'ConnOpenShiftHome'
+    version: '4.3'
+    cmd: 'oc login -u kubeadmin -p NotForPublicConsumption https://onepoc.net:6443 --insecure-skip-tls-verify=true'
+    ignoreFlag: true
+    uselocalOc: true
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -14,7 +21,7 @@ steps:
   inputs:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
-    cmd: 'oc login -u kubeadmin -p NotForPublicConsumption https://onepoc.net:6443 --insecure-skip-tls-verify=true'
+    cmd: 'oc login -u kubeadmin -p kKdPx-pjmWe-b3kuu-jeZm3 https://onepoc.net:6443 --insecure-skip-tls-verify=true'
     uselocalOc: true
 - task: oc-cmd@2
   inputs:
