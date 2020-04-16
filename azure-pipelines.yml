@@ -14,10 +14,11 @@ steps:
   inputs:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
-    cmd: 'oc start-build nodejs-demoapp --follow --insecure-skip-tls-verify'
+    cmd: 'oc start-build nodejsapp-nodejsapp --follow --insecure-skip-tls-verify'
 - task: oc-cmd@2
   inputs:
     openshiftService: 'ConnOpenShiftHome'
     version: '4.3'
     cmd: 'oc status --insecure-skip-tls-verify'
+
 
